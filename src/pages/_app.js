@@ -4,7 +4,7 @@ import Navbar from "@/components/Layout/Navbar";
 
 export default function App({ Component, pageProps }) {
   return (
-    <SessionProvider session={session}>
+    <SessionProvider session={pageProps.session}>
       <>
         <Navbar />
         <Component {...pageProps} />
