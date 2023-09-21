@@ -14,6 +14,8 @@ const HomePage = () => {
       {session?.user ? (
         <h2 style={{ textAlign: "center" }}>
           Logged in user : {session?.user?.name}
+          <br />
+          User Email : {session?.user?.email}
         </h2>
       ) : (
         ""
